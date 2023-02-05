@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url(../fonts/Montserrat/static/Montserrat-Bold.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poopins';
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #057a8d;
+  --secondary-color: #f1c111;
+  --white-color: #ffffff;
+  --dark-color: #171819;
+  --project-bg: #f0f8ff;
+  --menu-bg: #0c8195;
+
+  --title-font-family: 'Monserrat-Bold', sans-serif;
+  --reguler-font-family: 'Montserrat', sans-serif;
+  --menu-font-family: 'poopins', sans-serif;
+}
+
+body{
+  font-family: var(--reguler-font-family);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header{
+  background-color: var(--dark-color);
+  color: var(--project-bg);
+  border: #555 solid;
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  width: 30%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+ul li {
+    margin: 1rem auto 1rem;
+    cursor: pointer;
+    position: relative;
+    padding: 1rem;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    width: 20%;
+    text-align: center;
+}
+
+ul li:hover {
+    background: #ddd;
+  }
+
+input {
+    border: none;
+    border-radius: 5px;
+    width: 75%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1rem ;
+}
+
+.close:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+/* Style the "Add" button */
+.addBtn {
+    padding: 0.5rem;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10%;
+    margin: auto;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: var(--title-font-family);
+  }
+
+  a {
+    text-decoration: none;
+  }
